@@ -19,7 +19,7 @@ import Faye from 'faye'
 // Code that will run only after the entire view has been rendered.
 // https://vuejs.org/v2/api/#mounted
 export default {
-  mounted: function() {
+  mounted () {
     // Configure Faye client.
     this.socket = new Faye.Client('/faye', {
       timeout: 20
